@@ -20,8 +20,15 @@
             padding: 1em 0;
             text-align: center;
         }
-        header h1 {
-            margin: 0;
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header img {
+            max-width: 150px;
+            margin-right: 20px;
+            border-radius: 10px;
         }
         nav {
             background: #333;
@@ -58,8 +65,13 @@
 <body>
     <!-- Sekcja nagłówka -->
     <header>
-        <h1>Witamy w Świecie Siatkówki</h1>
-        <p>Twoje najlepsze źródło informacji o siatkówce.</p>
+        <div class="container">
+            <img src="siatkowka.jpeg" alt="Piłka do siatkówki" />
+            <div>
+                <h1>Witamy w Świecie Siatkówki</h1>
+                <p>Twoje najlepsze źródło informacji o siatkówce.</p>
+            </div>
+        </div>
     </header>
 
     <!-- Menu nawigacyjne -->
